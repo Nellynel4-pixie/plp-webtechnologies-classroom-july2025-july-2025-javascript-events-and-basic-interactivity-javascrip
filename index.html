@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to Interactive JavaScript!</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <section>
+    <h2>Light/Dark Mode</h2>
+    <button id="toggle-theme">Toggle Theme</button>
+  </section>
+
+  <!-- Counter Game -->
+  <section>
+    <h2>🎮 Counter Game</h2>
+    <button id="increment-btn">+1</button>
+    <button id="reset-btn">Reset</button>
+    <p>Score: <span id="counter">0</span></p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer hidden">JavaScript is the language of the web, used to make pages interactive.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What is the DOM?</h3>
+      <p class="faq-answer hidden">DOM stands for Document Object Model. It’s how JS interacts with HTML.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>📋 Registration Form</h2>
+    <form id="registration-form">
+      <label>
+        Username: <input type="text" id="name" required>
+        <small class="error" id="name-error"></small>
+      </label>
+      <br>
+      <label>
+        Email: <input type="text" id="email" required>
+        <small class="error" id="email-error"></small>
+      </label>
+      <br>
+      <label>
+        Password: <input type="password" id="password" required>
+        <small class="error" id="password-error"></small>
+      </label>
+      <br>
+      <!-- 👇 Show Password Toggle -->
+      <label class="switch-label">
+        <input type="checkbox" id="show-password">
+        <span class="slider"></span>
+        Show Password
+      </label>
+      <br>
+      <button type="submit">Register</button>
+      <p id="form-success" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

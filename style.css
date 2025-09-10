@@ -1,0 +1,71 @@
+/* General Page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #222;
+  transition: 0.3s;
+}
+
+.dark-mode {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #f4f4f4;
+}
+
+/* Sections */
+section {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.dark-mode section {
+  background: #333;
+}
+
+/* Headings */
+h1 { text-align: center; color: #ff6600; }
+h2 { color: #0066cc; }
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  color: white;
+}
+button:hover { background: linear-gradient(135deg, #36d1dc, #5b86e5); }
+
+/* FAQ */
+.faq-question { cursor: pointer; padding: 8px; background: #ffeb99; }
+.faq-answer { margin: 8px 0; padding: 8px; border-left: 3px solid #ff6600; }
+
+/* Form */
+input {
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+input:focus { border-color: #ff6600; outline: none; }
+.error { color: red; font-size: 12px; }
+.success { color: green; }
+
+/* Toggle Switch */
+.switch-label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.switch-label input { display: none; }
+.slider {
+  width: 36px; height: 18px;
+  background: #bbb; border-radius: 18px; position: relative;
+}
+.slider::before {
+  content: ""; position: absolute; top: 2px; left: 2px;
+  width: 14px; height: 14px; background: #fff; border-radius: 50%;
+  transition: transform 0.3s;
+}
+.switch-label input:checked + .slider { background: #ff6600; }
+.switch-label input:checked + .slider::before { transform: translateX(18px); }
+
